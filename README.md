@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/kevincobain2000/gol">
+  <a href="https://github.com/jdmdmm/gol">
     <img alt="gol" src="https://imgur.com/sktoYPP.png" width="120">
   </a>
 </p>
@@ -55,7 +55,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/kevincobain2000/gol">
+  <a href="https://github.com/jdmdmm/gol">
     <img alt="gol" src="https://imgur.com/fBK0hGa.png">
   </a>
 </p>
@@ -65,7 +65,7 @@
 Use this method if go is not installed on your server
 
 ```bash
-curl -sL https://raw.githubusercontent.com/kevincobain2000/gol/master/install.sh | sh
+curl -sL https://raw.githubusercontent.com/jdmdmm/gol/master/install.sh | sh
 ```
 
 ## Examples
@@ -115,7 +115,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/kevincobain2000/gol"
+	"github.com/jdmdmm/gol"
 )
 
 func main() {

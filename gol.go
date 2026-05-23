@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/kevincobain2000/gol/pkg"
+	"github.com/jdmdmm/gol/pkg"
 	"github.com/labstack/echo/v4"
 )
 
@@ -15,6 +15,7 @@ var publicDir embed.FS
 type GolOptions struct { // nolint: revive
 	Every     int64
 	FilePaths []string
+	SSHPaths  []string
 	LogLevel  slog.Leveler
 }
 type GolOption func(*GolOptions) error // nolint: revive
@@ -28,6 +29,7 @@ func NewGol(opts ...GolOption) *Gol {
 		Every:     1000,
 		LogLevel:  slog.LevelInfo,
 		FilePaths: []string{},
+		SSHPaths:  []string{},
 	}
 	for _, opt := range opts {
 		err := opt(options)
