@@ -43,8 +43,8 @@ func NewGol(opts ...GolOption) *Gol {
 }
 
 func (g *Gol) NewAPIHandler() *pkg.APIHandler {
-	pkg.UpdateGlobalFilePaths(g.Options.FilePaths, nil, nil, 1000)
-	go pkg.WatchFilePaths(g.Options.Every, g.Options.FilePaths, nil, nil, 1000)
+	pkg.UpdateGlobalFilePaths(g.Options.FilePaths, g.Options.SSHPaths, nil, 1000)
+	go pkg.WatchFilePaths(g.Options.Every, g.Options.FilePaths, g.Options.SSHPaths, nil, 1000)
 	return pkg.NewAPIHandler()
 }
 func (*Gol) NewAssetsHandler() *pkg.AssetsHandler {
