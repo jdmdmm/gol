@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kevincobain2000/gol/pkg"
+	"github.com/jdmdmm/gol/pkg"
 )
 
 //go:embed all:dist/*

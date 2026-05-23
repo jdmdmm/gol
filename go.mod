@@ -1,4 +1,4 @@
-module github.com/kevincobain2000/gol
+module github.com/jdmdmm/gol
 
 go 1.24.3
 
